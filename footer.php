@@ -8,13 +8,15 @@
  */
 
 ?>
-			</div><!-- End #container-->
-			<footer id="footer">
-				<div id="copyright">
-					&copy; <?php echo esc_html( date_i18n( __( 'Y', 'blankslate' ) ) ); ?> <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
-				</div>
-			</footer>
-		</div><!-- End #wrapper-->
-	<?php wp_footer(); ?>
+		</div>
+		<footer id="footer">
+			<?php
+			dynamic_sidebar( 'footer-widget-area-1' );
+			dynamic_sidebar( 'footer-widget-area-2' );
+			dynamic_sidebar( 'footer-widget-area-3' );
+			dynamic_sidebar( 'footer-widget-area-4' );
+			?>
+		</footer>
+		<?php wp_footer(); ?>
 	</body>
 </html>

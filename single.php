@@ -8,10 +8,10 @@
  */
 
 get_header(); ?>
-	<main id="content">
+<main id="content">
 	<?php
-	if ( have_posts() ) :
-		while ( have_posts() ) :
+	if ( have_posts() ) {
+		while ( have_posts() ) {
 			the_post();
 			get_template_part( 'entry' );
 			if ( comments_open()
@@ -19,10 +19,10 @@ get_header(); ?>
 			) {
 				comments_template( '', true );
 			}
-		endwhile;
-	endif;
+		}
+	}
 	?>
-	</main>
-	<?php
-	get_sidebar();
+</main>
+<?php
+get_sidebar();
 get_footer();
