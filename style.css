@@ -15,8 +15,11 @@ Text Domain: minimax2
 */
 
 #header,
-#menu {
+#menu,
+#footer,
+#main {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 #header,
@@ -29,11 +32,6 @@ Text Domain: minimax2
 #header,
 #footer {
 	background-color: #0269ac;
-}
-
-#main {
-	display: flex;
-	flex-wrap: wrap;
 }
 
 #content {
